@@ -1,0 +1,335 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-24T04:35:34.852Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3475000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Perform Registration",
+        "description": "",
+        "id": "sample-tests;perform-registration",
+        "after": [
+          {
+            "result": {
+              "duration": 787000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDownMethod()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10643000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Navigate to application",
+            "match": {
+              "location": "steps.SampleStepDefs.navigateToApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3521000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select \"Sign in\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign in\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter Email Address",
+            "match": {
+              "location": "steps.SampleStepDefs.enterEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select \"Create an Account\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create an Account\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: id_state (tried for 60 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.0.0-alpha-6\u0027, revision: \u00275f43a29cfc\u0027\nSystem info: host: \u0027LAPTOP-F5MDEHK7\u0027, ip: \u0027192.168.43.197\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\HAREES~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6fad8c25de07288722c6e16841ac08f6\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)\r\n\tat org.openqa.selenium.support.ui.FluentWait.lambda$checkConditionInLoop$2(FluentWait.java:255)\r\n\tat java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)\r\n\tat java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)\r\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\r\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067)\r\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703)\r\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)\r\n\tat ✽.I perform registration with below data(file:///C:/Users/Hareesh%20podella/workspace/SampleProject/./Resources/SampleTests.feature:9)\r\n",
+              "duration": 67585000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I perform registration with below data",
+            "match": {
+              "location": "steps.SampleStepDefs.performRegistration(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CusFirstName",
+                  "CusLastName",
+                  "Password",
+                  "Dob",
+                  "FirstName",
+                  "LastName",
+                  "Company",
+                  "Address",
+                  "City",
+                  "State",
+                  "Zip",
+                  "Country",
+                  "Phone",
+                  "Mobile",
+                  "Assign"
+                ]
+              },
+              {
+                "cells": [
+                  "Johnson",
+                  "Smith",
+                  "Smith@123",
+                  "23-5-1990",
+                  "John",
+                  "Nison",
+                  "Abc Company",
+                  "Hyderabad",
+                  "Hyderabad",
+                  "Indiana",
+                  "500019",
+                  "United States",
+                  "9999988888",
+                  "Sample",
+                  "Assign"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I select \"Register\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user should be register",
+            "match": {
+              "location": "steps.SampleStepDefs.userShouldBeRegister()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Verify the user name in the screen",
+            "match": {
+              "location": "steps.SampleStepDefs.verifyUserDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I select \"Any item\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Any item\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I select \"Add to cart\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add to cart\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I select \"Proceed to checkout\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Proceed to checkout\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I select \"Proceed to checkout\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Proceed to checkout\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I select \"Proceed to checkout\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Proceed to checkout\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I select \"Terms of Service\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Terms of Service\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I select \"Proceed to checkout\" element",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Proceed to checkout\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.SampleStepDefs.selectElement(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Verify the product details in Payment page",
+            "match": {
+              "location": "steps.SampleStepDefs.verifyUserdeatilsInPaymntPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Sample tests",
+    "description": "",
+    "id": "sample-tests",
+    "keyword": "Feature",
+    "uri": "file:Resources/SampleTests.feature",
+    "tags": []
+  }
+]
